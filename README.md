@@ -1,6 +1,6 @@
 # Ellie's csci185 WebDev portfolio
 
-This was created by Ellie Lagrave for Fall 2023 class Csci185
+This was created by Ellie for Fall 2023 class Csci185
 
 Link to her Git Hub [repository][Github-repo].
 
