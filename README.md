@@ -1,10 +1,10 @@
-# Ellie's csci185 WebDev portfolio
+# Ellie's Csci185 WebDev portfolio
 
 This was created by Ellie for Fall 2023 class Csci185
 
-Link to her Git Hub [repository][Github-repo].
+Link to her Git Hub [Repository][Github-repo].
 
-Link to her Git Hub Pages [website][Github-pages]
+Link to her Git Hub Pages hosted [Website][Github-pages]
 
 
 
