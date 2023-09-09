@@ -8,6 +8,10 @@ p, a, li {
     font-size: 1em;
 }
 
+title {
+    background-color: #856d8a;
+}
+
 body {
     background-image: url('./images/788850.jpg');
     background-repeat: repeat-y;
@@ -24,8 +28,8 @@ footer {
     font-family: sans-serif, Helvetica, sans-serif;
 }
 
-.main h2 {
-    background-color: hsla(308, 51%, 47%, .9);
+tutorials h2 {
+    background-color: hsla(308, 23%, 32%, 0.9);
     margin-bottom: 0;
     margin-top: 30px;
     padding: 2px;
@@ -101,20 +105,12 @@ breaking text on spaces to allow cells to be less wide. */
 
 th,
 td {
-    border: 1px solid #673871;
-    text-align: left;
-    padding: 8px;
-}
-
-td {
-    border: 1px solid #654c6b;
+    border-bottom: 1px solid #933fa4;
     text-align: left;
     padding: 8px;
 }
 
 th {
-    font-weight: bold;
-    /* header already bold*/
     background-color: #933fa4;
 }
 
@@ -122,6 +118,3 @@ tr {
     background-color: #dddddd;
 }
 
-title {
-    background-color: #856d8a;
-}
