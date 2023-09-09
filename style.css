@@ -1,6 +1,57 @@
 * {
     box-sizing: border-box;
 }
+p,
+a,
+li {
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+title {
+    background-color: #856d8a;
+}
+
+header,
+footer {
+    background-color: hsla(308, 51%, 47%, 0.85);
+    margin: 1;
+    padding: 2px;
+    color: rgb(147, 81, 140, );
+    font-family: sans-serif, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('./content/images/788850.jpg');
+    background-repeat: repeat-y;
+    font-family: sans-serif, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: fit-content;
+    /* This ugly hack allows the table to be only as wide as necessary, 
+breaking text on spaces to allow cells to be less wide. */
+}
+
+th,
+td {
+    border-bottom: 1px solid #933fa4;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #933fa4;
+}
+
+tr {
+    background-color: #dddddd;
+}
+
+
 
 .main h2 {
     background-color: hsla(308, 23%, 32%, 0.9);
