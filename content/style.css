@@ -1,8 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+
+p, a, li {
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
 body {
     background-image: url('./images/788850.jpg');
     background-repeat: repeat-y;
     font-family: sans-serif, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0px;
 }
 
 header,
@@ -14,15 +24,13 @@ footer {
     font-family: sans-serif, Helvetica, sans-serif;
 }
 
-
-
 .main h2 {
     background-color: hsla(308, 51%, 47%, .9);
     margin-bottom: 0;
     margin-top: 30px;
     padding: 2px;
     width: fit-content;
-    color: rgb(147, 81, 140, );
+    color: rgb(147, 81, 140, 0.6);
     font-family: sans-serif, Helvetica, sans-serif;
 }
 
