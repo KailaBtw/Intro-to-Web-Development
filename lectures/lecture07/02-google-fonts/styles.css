@@ -1,0 +1,10 @@
+/* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+a {
+    font-family: 'Lora', serif, Arial;
+    font-size: 1em;
+}
+a:hover {
+    text-decoration: none;
+}
