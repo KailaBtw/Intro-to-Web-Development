@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: rgb(19, 101, 74);
+}
+body * {
+    border: solid 1px black;
+    padding: 5px;
+    display: inline-block
+}
+#blueSection {
+    background-color: blueviolet;
+}
+section {
+    margin: 0;
+}
+table {
+    border: none;
+}
+td, tr {
+    padding: 10px;
+    border: none;
+}
+main {
+    background-color: #8d8c8d;
+}
+section {
+    border: transparent 0px
+}
+/* Your code here */
