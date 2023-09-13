@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Mooli&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -18,18 +20,18 @@ footer {
     margin: 1;
     padding: 2px;
     color: rgb(147, 81, 140, );
-    font-family: sans-serif, Helvetica, sans-serif;
+    font-family: 'Mooli', sans-serif;
 }
 
 body {
     background-image: url('./content/images/788850.jpg');
     background-repeat: repeat-y;
-    font-family: sans-serif, Helvetica, sans-serif;
+    font-family: 'Mooli', sans-serif;
     margin: 0px;
 }
 
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Mooli', sans-serif;
     border-collapse: collapse;
     width: fit-content;
     /* This ugly hack allows the table to be only as wide as necessary, 
@@ -52,15 +54,18 @@ tr {
 }
 
 
-
+#table_head {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
 .main h2 {
-    background-color: hsla(308, 23%, 32%, 0.9);
+    background-color: rgba(63, 137, 131, 0.85);
     margin-bottom: 0;
     margin-top: 30px;
     padding: 2px;
     width: fit-content;
-    color: rgb(147, 81, 140, 0.6);
-    font-family: sans-serif, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: 'Mooli', sans-serif;
 }
 
 .jump_menu {
@@ -115,8 +120,11 @@ a:visited {
     display: block;
 }
 
-a:hover,
+/* This is an example of a pseudo class */
+a:hover,  
 a:active {
     background-color: rgb(160, 95, 157);
+    padding: 20px 40px;
+    transition: all 1s ease-out;
 }
 
