@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Mooli&display=swap');
 /* 
    Tip: The @import link to the Google font needs to be on the first line
    of the stylesheet (above this comment).
@@ -14,4 +15,8 @@ body * {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Mooli', sans-serif;
 }

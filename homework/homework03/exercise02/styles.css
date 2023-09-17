@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -23,6 +24,26 @@ code {
     background-color: #EEE;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+main {
+    padding: 15vw;
+}
+
+#card1, #card3, #card5 {
+    background-color: #EEEEEE;
+}
+
+#card1 > img , #card3 > img, #card5 > img{
+    border-radius: 50%;
+}
+
+#card2, #card4, #card6 {
+    background-color: #BCE5D6;
+}
+
+main p:first-child, footer > p {
+    font-weight: bolder;
 }
 
 .cards {
