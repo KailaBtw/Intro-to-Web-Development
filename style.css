@@ -102,6 +102,16 @@ tr {
 main {
     padding-right: 10vw;
     padding-left: 10vw;
+    align-content: center;
+    text-align: center;
+    display: flexbox;
+    margin-left: 22%;
+    border: 50px hidden;
+}
+
+section {
+    align-content: center;
+    text-align: center;
 }
 
 ul {

@@ -1,0 +1,25 @@
+
+img {
+   width: 200px; 
+}
+
+nav {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+}
+
+header, footer {
+    background-color: gray;
+}
+
+section {
+    width: 400px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;;
+}
+
+#pink {
+    background-color: hotpink;
+}
