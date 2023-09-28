@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <!-- stylesheets and metadata go here -->
     <title>Ellie's Purple Palace</title>
     <link rel="stylesheet" href="./style.css">
     <style>
@@ -12,33 +12,48 @@
             background-repeat: repeat-y;
         }
     </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
-<header2>
-    <nav class="navbar">
-        <a href="https://github.com/KailaBtw/csci185-coursework">Ellie's Github Repo</a>
-        <a href="">Home</a>
-        <a href="./content/music.html">Music</a>
-        <a href="./content/videos.html">Videos</a>
-    </nav>
-</header2>
 
 <body>
-    <header>
-        <h1>
-            <center>
-                Ellie's Purple Palace
-            </center>
-        </h1>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="https://github.com/KailaBtw/csci185-coursework">Ellie's Github Repo</a>
+            <a href="">Home</a>
+            <a href="./content/music.html">Music</a>
+            <a href="./content/videos.html">Videos</a>
+        </nav>
+            <h1 style="text-align:center; padding-bottom: 20px;">Ellie's Purple Palace</h1>
     </header>
-    <nav class="jump_menu">
-        <ul>
-            <li><a href="#tutorials">Jump to Tutorials</a></li>
-            <li><a href="#homework">Jump to Homework</a></li>
-            <li><a href="#class-exercises">Jump to Class Exercise</a></li>
-            <li><a href="#inspiration">Jump to Design Inspiration</a></li>
-        </ul>
-    </nav>
+
+
+    <div class="row">
+
+        <div class="side">
+            <div class="jumpbar">
+                <h1>Jump Menu</h1>
+                <a href="#tutorials">Tutorials</a>
+                <a href="#homework">Homework</a>
+                <a href="#class-exercises">Class Exercise</a>
+                <a href="#inspiration">Design Inspiration</a>
+            </div>
+            <h1><br></h1>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+        </div>
+
+    
+
     <main class="main">
+
+
+
+
         <section id="tutorials">
             <!-- 
                     Links to your tutorial assignments go here.
@@ -280,7 +295,18 @@
                         <a href="./quizes/quiz01/index.html">Quiz 01 - Taco Temple</a>
                     </td>
                     <td>
-                        
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong></strong>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
                     </td>
                 </tr>
                 <tr>
@@ -299,7 +325,7 @@
                         <strong></strong>
                     </td>
                     <td>
-                        
+
                     </td>
                     <td>
 
@@ -313,7 +339,7 @@
 
                     </td>
                     <td>
-                        
+
                     </td>
                 </tr>
                 <tr>
@@ -324,18 +350,7 @@
 
                     </td>
                     <td>
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong></strong>
-                    </td>
-                    <td>
 
-                    </td>
-                    <td>
-                        
                     </td>
                 </tr>
             </table>
@@ -575,10 +590,11 @@
             </table>
         </section>
     </main>
+</div>
 </body>
 <br>
 <br>
-<footer>
+<footer class="footer">
     Page by Ellie Lagrave
     <br>csci185-coursework
 </footer>
