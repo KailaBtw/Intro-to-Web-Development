@@ -4,9 +4,36 @@ html {
 
 body * {
     box-sizing: border-box;
+   /* border: solid 1px black; */
+   border: solid 1px black;
+    padding: 5px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+}
+
+nav {
+display: flex;
+    justify-content: space-between;
+}
+
+ul { 
+    display: flex;
+    list-style: none;
+}
+
+.hans {
+    display:none
+}
+
+@media screen and (max-width: 1000px) {
+    .ham {
+        display: inline
+    }
+
+    ul {
+        display: none
+    }
 }

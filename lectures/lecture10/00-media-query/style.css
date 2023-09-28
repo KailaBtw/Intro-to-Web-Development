@@ -35,7 +35,31 @@ footer {
     height: 10vh;
 }
 
+
+
 @media screen and (max-width: 800px) {
-    /* Your code here! */
+    header {
+        background-color: lightgray;
+    }
+    main {
+        background-color: lightgray;
+    }
+    footer {
+        background-color: lightgray;
+    }
 }
 
+@media screen and (max-width: 500px) {
+    header {
+        background-color: darkslategray;
+        height: 10vh;
+    }
+    main {
+        background-color: lightgray;
+        height: 80vh;
+    }
+    footer {
+        background-color: orangered;
+        height: 10vh;
+    }
+}

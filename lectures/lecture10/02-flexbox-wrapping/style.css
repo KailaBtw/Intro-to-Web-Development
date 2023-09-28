@@ -14,15 +14,32 @@ flex-wrap: 		    (no-wrap, wrap)
 */
 
 
+main { 
+    column-gap :10%;
+}
 
-
-
+main, section {
+    border: solid 1px, 
+}
+img {
+    margin: 10px;
+}
 
 @media only screen and (max-width: 1000px) {
     /* Your code here */
 }
 
 @media only screen and (max-width: 600px) {
-    /* Your code here */
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header, main, footer { 
+        /* put on parent*/
+        border: 2px coral;
+        
+    }
+    
+
 }
 
