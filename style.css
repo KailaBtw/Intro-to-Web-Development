@@ -72,6 +72,7 @@ body {
 .jumpbar>h1 {
   border-bottom: solid black 2px;
   border-top: solid black 2px;
+  padding: 5px;
 }
 
 .main>h1 {
@@ -92,6 +93,8 @@ body {
   background-color: rgba(69, 58, 69, 0.831);
   color: white;
   max-width: 280px;
+  max-height: 1300px;
+  border-radius: 5px;
 }
 
 /* Main column */
@@ -110,15 +113,14 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  margin: 20px;
+  padding: 10px;
   text-align: center;
   border-radius: 5px;
   background-color: rgba(69, 58, 69, 0.831);
   color: white;
+  max-width: 800px;
 }
-
-
-
 
 #table_head {
   font-size: 1.8em;
@@ -192,8 +194,12 @@ td>a:active {
     flex-direction: column;
   }
 
-  .jumpbar,
-  .navbar {
+  .jumpbar {
     flex-direction: row;
+  }
+   
+  .side {
+    max-width: 1000px;
+    border-radius: 5px;
   }
 }
