@@ -3,7 +3,9 @@
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -61,7 +63,7 @@ input[type=submit]:hover {
 }
 
 /* Style the navigation bar links */
-.navbar a  {
+.navbar a {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
@@ -86,7 +88,9 @@ body {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+
+  .column,
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
