@@ -9,8 +9,8 @@ title {
 }
 
 body {
-    background-image: url('./content/images/788850.jpg');
-    background-repeat: repeat-y;
+    background-image: url('./content/images/MilkyWayPortugal_1920x1080.jpg');
+    background-repeat: repeat;
     font-family: 'Mooli', sans-serif;
 }
 
@@ -27,6 +27,7 @@ body {
     display: flex;
     background-color: rgb(71, 40, 74);
     border-radius: 5px;
+    max-width: 1475px;
   }
   
   /* Style the navigation bar links */
@@ -79,16 +80,16 @@ body {
 /* Sidebar/left column */
 .side {
   flex: 20%;
-  background-color: rgba(42, 39, 42, 0.731);
-  max-width: fit-content;
+  background-color: rgba(69, 58, 69, 0.831);
   color: white;
+  max-width: 280px;
 }
 
 /* Main column */
 .main {
   flex: 80%;
-  background-color: rgba(60, 19, 62, 0.416);
   padding: 20px;
+  max-width: 1200px;
 }
 
 /* Fake image, just for this example */
@@ -102,8 +103,9 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #eae2e3;
   border-radius: 5px;
+  background-color: rgba(69, 58, 69, 0.831);
+  color: white;
 }
 
 
