@@ -93,15 +93,19 @@ body {
   background-color: rgba(69, 58, 69, 0.831);
   color: white;
   max-width: 280px;
-  max-height: 1300px;
+  max-height: 1000px;
   border-radius: 5px;
+  /* position: fixed; */
 }
 
 /* Main column */
 .main {
+  /* display: flex; */
   flex: 80%;
   padding: 20px;
   max-width: 1200px;
+  /* flex-direction: column; */
+
 }
 
 /* Fake image, just for this example */
