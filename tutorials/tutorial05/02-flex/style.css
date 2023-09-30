@@ -12,3 +12,33 @@ body {
 }
 
 /* create additional rules below:  */
+
+h2 {
+    font-weight: bold;
+}
+
+#home, #bio, #portfolio, #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#home {
+    background-color: aqua;
+}
+
+#bio {
+    background-color: lightblue;
+}
+
+#portfolio {
+    background-color: blue;
+    color: white;
+}
+
+#contact {
+    background-color: darkblue;
+    color: white;
+}

@@ -10,3 +10,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+
+nav {
+    display: flex;
+    position: fixed;
+    align-items: stretch;
+    width: 100%;
+}
+
+ul {
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: right;
+    flex-grow: 1;
+}
+
+li {
+    padding: 10px;
+}
+
+
