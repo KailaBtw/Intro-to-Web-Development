@@ -1,0 +1,678 @@
+<!-- You're welcome to change any of this! -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Ellie's Purple Palace</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="https://github.com/KailaBtw/csci185-coursework">Ellie's Github Repo</a>
+            <a href="">Home</a>
+            <a href="./content/music.html">Music</a>
+            <a href="./content/videos.html">Videos</a>
+        </nav>
+    </header>
+
+
+    <div class="row">
+
+        <div class="side">
+            <!-- <div class="jumpbar">
+                <h1>Jump Menu</h1>
+                <a href="#tutorials">Tutorials</a>
+                <a href="#homework">Homework</a>
+                <a href="#quizes">Quizes and Exams</a>
+                <a href="#class-exercises">Class Exercise</a>
+                <a href="#inspiration">Design Inspiration</a>
+                <a href="#contact_us">Contact Us</a>
+            </div> -->
+            <div style="padding: 10px;">
+                <h2>About Me</h2>
+                <p>I am majoring in Computer Science. I love solving puzzles with programming.</p>
+                <h5>Photo of me:</h5>
+                <a href="./content/images/avatar_witch.png">
+                    <img src="./content/images/avatar_witch.png" width=200px height=200px alt="Witch in Purple">
+                </a>
+                <h1><br></h1>
+            </div>
+        </div>
+
+
+
+        <main class="main">
+            <h1>Ellie's Purple Palace</h1>
+
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick="openCity('tutorials')">Tutorials</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+            </div>
+            <div id="tutorials" class="city">
+                    <!-- 
+                            Links to your tutorial assignments go here.
+                            When you submit a new tutorial, add a link to it
+                            here (if applicable)
+                        -->
+                    <div class="boxed">
+                        <a href="./tutorials/tutorial01/Tutorial 1 Assignment - Ellie.docx">
+                            <div class="smallbox">
+                                <h3>Tutorial_01</h3>
+                                <img src="./content/images/smallbox/tut_1.png" alt="tut 1 icon">
+                                <p>Analyzing web - short essay</p>
+                            </div>
+                        </a>
+                        <a href="./tutorials/tutorial02/index.html">
+                            <div class="smallbox">
+                                <h3>Tutorial_02</h3>
+                                <img src="./content/images/smallbox/tut_2.png" alt="tut 2 icon">
+                                <p>Flower Pictures</p>
+                            </div>
+                        </a>
+                        <a href="./index.html">
+                            <div class="smallbox">
+                                <h3>Tutorial_03</h3>
+                                <img src="./content/images/smallbox/tut_03png.png" alt="tut 3 icon">
+                                <p>This homepage</p>
+                            </div>
+                        </a>
+                        <a href="./tutorials/tutorial04/index.html">
+                            <div class="smallbox">
+                                <h3>Tutorial_04</h3>
+                                <img src="./content/images/smallbox/tut_4.png" alt="tut 4 icon">
+                                <p>My bakery page</p>
+                            </div>
+                        </a>
+                            <div class="smallbox">
+                                <h3>Tutorial_05</h3>
+                                <img src="./content/images/smallbox/tut_4.png" alt="tut 4 icon">
+                                <p>My bakery page</p>
+                            </div>
+                        
+                    </div>
+                </div>
+            <div id="Paris" class="city" style="display:none">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="city" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+
+            <a href="./tutorials/tutorial05/01-flexbox-froggy/flex.png">Froggy</a>
+            <a href="./tutorials/tutorial05/02-flex/index.html">Exercise 02</a>
+            <a href="./tutorials/tutorial05/03-navbar/index.html">Exercise 03</a>
+            <table>
+                <tr>
+                    <th id="table_head">
+
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Tutorial Name:
+                    </th>
+                    <th>
+                        Submission:
+                    </th>
+                    <th>
+                        Due Date:
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Tutorial 1 assignment</strong>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        8/25
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Tutorial 2 assignment</strong>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        9/01
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Tutorial 3 assignment</strong>
+                    </td>
+                    <td>
+                        <a href="./index.html">Home Page</a>
+                    </td>
+                    <td>
+                        9/08
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Tutorial 4 assignment</strong>
+                    </td>
+                    <td>
+                        <a href="./tutorials/tutorial04/index.html">Tutorial 4</a>
+                    </td>
+                    <td>
+                        9/15
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Tutorial 5 assignment</strong>
+                    </td>
+                    <td>
+                        <a href="./tutorials/tutorial05/01-flexbox-froggy/flex.png">Froggy</a>
+                        <a href="./tutorials/tutorial05/02-flex/index.html">Exercise 02</a>
+                        <a href="./tutorials/tutorial05/03-navbar/index.html">Exercise 03</a>
+                    </td>
+                    <td>
+                        9/29
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Tutorial 6 assignment</strong>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        10/07
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <section id="homework">
+                <h2></h2>
+                <!-- 
+                    Links to your Homework assignments go here.
+                    When you submit a new HW assignment, add a link to it here (if applicable)
+                -->
+                <table>
+                    <tr>
+                        <th id="table_head">
+                            Homework
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Homework Name:
+                        </th>
+                        <th>
+                            Submission:
+                        </th>
+                        <th>
+                            Due Date:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Homework 2</strong>
+                        </td>
+                        <td>
+                            <a href="./homework/homework02/task01/index.html">A website about Animals</a>
+                        </td>
+                        <td>
+                            9/13
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Homework 3</strong>
+                        </td>
+                        <td>
+                            <a href="./homework/homework03/exercise02/index.html">CSS selector exercise</a>
+                        </td>
+                        <td>
+                            9/20
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Homework 4</strong>
+                        </td>
+                        <td>
+                            <a href="./homework/homework04/01-css-grid-garden/grid_garden.png">Grid Garden</a>
+                            <a href="./homework/homework04/02-grid/index.html">02-grid</a>
+                            <a href="./homework/homework04/03-tacotemple/index.html">Taco temple</a>
+                            <a href="./homework/homework04/04-responsive-layout-grid/index.html">Responsive</a>
+                        </td>
+                        <td>
+                            10/04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Homework 5</strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            10/13
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Homework 6</strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Homework 7</strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Homework 8</strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="quizes">
+                <h2></h2>
+                <!-- 
+                    Links to your in-class activities
+                -->
+                <table>
+                    <tr>
+                        <th id="table_head">
+                            Quizes and Tests
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Name:
+                        </th>
+                        <th>
+                            Link:
+                        </th>
+                        <th>
+                            Class Date:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Quiz 01</strong>
+                        </td>
+                        <td>
+                            <a href="./quizes/quiz01/index.html">Quiz 01 - Taco Temple</a>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Quiz 02</strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong></strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong></strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong></strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong></strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="class-exercises">
+                <h2></h2>
+                <!-- 
+                    Links to your in-class activities
+                -->
+                <table>
+                    <tr>
+                        <th id="table_head">
+                            Class Exercises (Demos)
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Lecture Name:
+                        </th>
+                        <th>
+                            Link:
+                        </th>
+                        <th>
+                            Class Date:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Lecture 03</strong>
+                        </td>
+                        <td>
+                            <a href="./lectures/lecture03/main/index.html">Linking Demo</a>
+                        </td>
+                        <td>
+                            8/25
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Lecture 04</strong>
+                        </td>
+                        <td>
+                            <a href="./lectures/lecture04/index.html">Image Demo</a>
+                        </td>
+                        <td>
+                            9/01
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Lecture 07</strong>
+                        </td>
+                        <td>
+                            <a href="./lectures/lecture07/01-pseudo-classes-with-transitions/index.html">Transition
+                                Demo</a>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Lecture 10</strong>
+                        </td>
+                        <td>
+                            <a href="./lectures/lecture10/04-navbar/index.html">Lecture 10</a>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong></strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong></strong>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="inspiration">
+                <h2></h2>
+                <!-- 
+                    Links to 5-10 websites that inspire you
+                -->
+                <table>
+                    <tr>
+                        <th id="table_head">
+                            Design
+                        </th>
+                        <th id="table_head">
+                            Inspiration
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Inspiration:
+                        </th>
+                        <th>
+                            Website link:
+                        </th>
+                        <th>
+                            Reason 01:
+                        </th>
+                        <th>
+                            Reason 02:
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Insiration 2</strong>
+                        </td>
+                        <td>
+                            <a href="https://oldschool.runescape.wiki/w/Agility">OSRS Wikipedia</a>
+                        </td>
+                        <td>
+                            Excellent ability to transfer information to the user easily using images.
+                        </td>
+                        <td>
+                            Useability, readability, and excellent hyperlinking between pages.
+                        </td>
+                        <td>
+                            Do more wiki edits and study their templates
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Insiration 2</strong>
+                        </td>
+                        <td>
+                            <a href="https://rsc.vet/wiki/index.php/Crown_of_the_Herbalist">OpenRSC Wikipedia</a>
+                        </td>
+                        <td>
+                            I edit this wiki as a side project. It was a great way for me to study organization of
+                            information.
+                        </td>
+                        <td>
+                            This project also helped me get better at formatting tables and images for websites.
+                        </td>
+                        <td>
+                            My goal is to expand this wiki project in my spare time.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Insiration 3</strong>
+                        </td>
+                        <td>
+                            <a href="https://github.com/">Git Hub</a>
+                        </td>
+                        <td>
+                            I love their excellent menuing system, with important account stuff on top
+                            and their navigation on the left menu
+                        </td>
+                        <td>
+                            Only pertinent information to the current page is show in nav/manu bars for that page.
+                        </td>
+                        <td>
+                            The crazy amount of settings never take more than a few seconds to find the correct one.
+                            Good example of not burying settings.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Insiration 4</strong>
+                        </td>
+                        <td>
+                            <a href="https://oldschool.runescape.com/a=13/">Old School Runescape</a>
+                        </td>
+                        <td>
+                            The osrs developers have delivered a retro UI that stayed true to the original design
+                            mentality from over 15 years ago.
+                        </td>
+                        <td>
+                            They have successfully added a ton of backend features and useability and quality assurance
+                            without changing the retro appeal to the userbase
+                        </td>
+                        <td>
+                            This is a good example of finding a classic design and sticking to it, but improving upon
+                            it.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Insiration 5</strong>
+                        </td>
+                        <td>
+                            <a
+                                href="https://www.tweaktown.com/news/91908/steam-just-got-massive-update-on-pc-bringing-refreshed-ui-and-new-features/index.html">Steam
+                                UI</a>
+                        </td>
+                        <td>
+                            Despite being an application, steam is actually built on top of an in-built web browser (the
+                            steam browser).
+                        </td>
+                        <td>
+                            They have delivered a consistently good and easy to use UI for the past 10-15 years with
+                            miniml
+                            changes and no disruption to user work flow
+                        </td>
+                        <td>
+                            Many other applications and websites radically change the user experience and cause a bad
+                            time
+                            for all parties.
+                        </td>
+
+                    </tr>
+                </table>
+            </section>
+            <footer class="footer" id="contact_us">
+                Page by Ellie Lagrave
+                <br>csci185-coursework<br>
+                <div class="navbar" style="max-width: fit-content;">
+                    <a href="./content/contact.html">Contact Us Here</a><br>
+                    <a href="./index.html">Return to top of Page</a>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

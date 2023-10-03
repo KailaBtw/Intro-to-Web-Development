@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Mooli&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 title {
   background-color: #856d8a;
 }
 
 body {
-  background-image: url('./content/images/MilkyWayPortugal_1920x1080.jpg');
+  background-image: url('./content/images/milky_way_portugal.jpg');
   background-repeat: repeat;
   font-family: 'Mooli', sans-serif;
 }
@@ -22,6 +18,9 @@ body {
 }
 
 
+
+
+
 /* Style the top navigation bar */
 .navbar,
 .jumpbar {
@@ -32,8 +31,8 @@ body {
 }
 
 /* Style the navigation bar links */
-.navbar a,
-.jumpbar a {
+.navbar > a,
+.jumpbar > a {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
@@ -41,15 +40,15 @@ body {
 }
 
 /* Change color on hover */
-.jumpbar a:hover,
-.navbar a:hover {
+.jumpbar > a:hover,
+.navbar > a:hover {
   background-color: #ddd;
   color: rgb(71, 40, 74);
   border-radius: 5px;
 }
 
 .jumpbar,
-.jumpbar a {
+.jumpbar > a {
   flex-direction: column;
   text-align: left;
 }
@@ -78,7 +77,146 @@ body {
 .main>h1 {
   border: solid black 2px;
   background-color: #9b7ea194;
+  padding: 8px;
+  margin: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for our main content boxes */
+
+.boxed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  /* border: solid black 2px; */
+  /* background-color: #4581a475; */
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+  /* background-color: rgb(71, 40, 74); */
+}
+
+.smallbox,
+.smallbox>a:link,
+.smallbox>a:visited {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 40% 60%;
+  border: solid black 2px; 
+  background-color: #4581a4d6;
+  border-radius: 5px;
+  color: white;
+  margin: 16px;
+  max-width: 300px;
+}
+
+.smallbox > img {
+  grid-row: 1/3;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  height: 110px;
+  width: 100px;
+}
+
+.smallbox > h3 {
+  color: rgb(248, 212, 255);
+  background-color: #9b7ea194;
+  padding-top: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-right-radius: 3px;
+  grid-column: 2/3;
+  border-bottom: solid rgba(130, 25, 130, 0.703) 1px;
+  width: 200px;
+  height: 20px;
+  max-height: 20px;
+}
+
+.smallbox > p {
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 0;
+  width: 200px;
+  text-align: left;
+}
+
+.smallbox > button {
+  grid-column: 1/3;
+}
+
+.smallbox:hover,
+.smallbox:active{
+  background-color: #2e6b8f;
+  /* color: rgb(248, 212, 255); */
+  border-color: whitesmoke;
+}
+
+.tabbed_content_bar {
+  background-color: rgb(71, 40, 74);
+  color: #933fa4;
+  margin-left: 80px;
+  padding: 0;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.tabbed_content_button {
+  background-color: rgb(71, 40, 74);
+  color: white;
+  border: #dddddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.tabbed_content_button:hover,
+.tabbed_content_button:hover {
+  background-color: #ddd;
+  color: rgb(71, 40, 74);
+}
+/* This is for the menu links */
+/* 
+.boxed>a:link,
+.boxed>a:visited {
+  color: white;
+  padding: 15px 40px;
+  display: block;
+  margin-right: 20px;
+  word-wrap: nowrap;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Column container */
 .row {
@@ -117,13 +255,31 @@ body {
 
 /* Footer */
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   margin: 20px;
-  padding: 10px;
+  padding-bottom: 20px;
   text-align: center;
   border-radius: 5px;
   background-color: rgba(69, 58, 69, 0.831);
   color: white;
   max-width: 800px;
+  height: 50px;
+}
+
+.footer > div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.footer a {
+  background-color: rgb(71, 40, 74);
+  padding-bottom: 0;
+  max-width: fit-content;
+  max-height: fit-content;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 8px;
 }
 
 #table_head {
@@ -141,69 +297,35 @@ body {
   margin-right: 1.3%;
 }
 
-table {
-  font-family: 'Mooli', sans-serif;
-  border-collapse: collapse;
-  width: fit-content;
-  /* This ugly hack allows the table to be only as wide as necessary, 
-breaking text on spaces to allow cells to be less wide. */
-}
-
-th,
-td {
-  border-bottom: 1px solid #933fa4;
-  text-align: left;
-  padding: 8px;
-}
-
-th {
-  background-color: #933fa4;
-}
-
-tr {
-  background-color: #dddddd;
-}
 
 
 
 
-
-
-
-
-/* This is for the menu links */
-
-td>a:link,
-td>a:visited {
-  background-color: rgba(63, 137, 131, 0.85);
-  color: white;
-  padding: 15px 25px;
-  text-align: left;
-  text-decoration: none;
-  display: block;
-}
-
-
-td>a:hover,
-td>a:active {
-  background-color: hsla(308, 51%, 47%, 0.85);
-  padding: 20px 40px;
-  transition: all 1s ease-out;
-}
-
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+ /* ##Device = Tablets, Ipads (portrait)
+ ##Screen = B/w 768px to 1024px */
+@media (max-width: 930px) {
   .row {
     flex-direction: column;
-  }
-
-  .jumpbar {
-    flex-direction: row;
   }
    
   .side {
     max-width: 1000px;
     border-radius: 5px;
+  }
+  .tabbed_content_bar {
+    margin-left: 100px;
+  }
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 720px) {
+  .side {
+    max-width: 1000px;
+  }
+  .boxed {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .tabbed_content_bar {
+    margin-left: 25px;
   }
 }
