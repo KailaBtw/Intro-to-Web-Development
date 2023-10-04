@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Mooli&display=swap');
 
-<<<<<<< HEAD
 
 /* 
 Similar color:
@@ -12,8 +11,6 @@ Complementary
 */
 
 
-=======
->>>>>>> main
 title {
   background-color: #856d8a;
 }
@@ -140,7 +137,6 @@ body {
   border-bottom-left-radius: 3px;
   height: 110px;
   width: 100px;
-<<<<<<< HEAD
 }
 
 .smallbox > h3 {
@@ -186,53 +182,6 @@ body {
   border-radius: 5px;
 }
 
-=======
-}
-
-.smallbox > h3 {
-  color: rgb(248, 212, 255);
-  background-color: #9b7ea194;
-  padding-top: 5px;
-  margin-top: 0;
-  margin-bottom: 0;
-  border-top-right-radius: 3px;
-  grid-column: 2/3;
-  border-bottom: solid rgba(130, 25, 130, 0.703) 1px;
-  width: 200px;
-  height: 20px;
-  max-height: 20px;
-}
-
-.smallbox > p {
-  margin: 0;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-bottom: 0;
-  width: 200px;
-  text-align: left;
-}
-
-.smallbox > button {
-  grid-column: 1/3;
-}
-
-.smallbox:hover,
-.smallbox:active{
-  background-color: #2e6b8f;
-  /* color: rgb(248, 212, 255); */
-  border-color: whitesmoke;
-}
-
-.tabbed_content_bar {
-  background-color: rgb(71, 40, 74);
-  color: #933fa4;
-  margin-left: 80px;
-  padding: 0;
-  width: fit-content;
-  border-radius: 5px;
-}
-
->>>>>>> main
 .tabbed_content_button {
   background-color: rgb(71, 40, 74);
   color: white;
@@ -359,17 +308,10 @@ body {
   margin-right: 1.3%;
 }
 
-<<<<<<< HEAD
 
 
 
 
-=======
-
-
-
-
->>>>>>> main
  /* ##Device = Tablets, Ipads (portrait)
  ##Screen = B/w 768px to 1024px */
 @media (max-width: 930px) {
