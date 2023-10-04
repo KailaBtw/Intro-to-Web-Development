@@ -1,3 +1,31 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+
 }
+
+main {
+    display: grid;
+    grid-template-columns: 530px 530px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    border: solid gray 1px;
+    margin: 10px;
+    width: 500px;
+    height: 200px;
+}
+
+.card > div {
+    margin-left: 20px;
+}
+
+div > p, div > span {
+    color: grey;
+}
+
+.card > img {
+    margin-top: 20px;
+}
+
