@@ -88,7 +88,7 @@ body {
 
 .boxed {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 350px 350px 350px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   /* border: solid black 2px; */
   /* background-color: #4581a475; */
@@ -273,7 +273,8 @@ make the two columns stack on top of each other instead of next to each other */
     width: 100%;
   }
   .boxed {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 350px 350px;
+    margin-left: 5%;
   }
   .main>h1 {
     width: 450px;
@@ -309,6 +310,7 @@ make the two columns stack on top of each other instead of next to each other */
 
 /* two wide columns */
 @media screen and (max-width: 720px) {
+
   .side {
     max-width: 1000px;
   }
@@ -318,7 +320,7 @@ make the two columns stack on top of each other instead of next to each other */
   .main>h1 {
     width: 80%;
     max-width: 350px;
-    margin-left: 15%;
+    margin-left: 1%;
   }
   .boxed {
     grid-template-columns: 1fr;
@@ -326,5 +328,9 @@ make the two columns stack on top of each other instead of next to each other */
   }
   .tabbed_content_bar {
     margin-left: 25px;
+    width: 320px;
+  }
+  .footer > p {
+    grid-column: 0/1;
   }
 }
