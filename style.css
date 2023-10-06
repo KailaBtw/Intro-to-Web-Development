@@ -228,10 +228,19 @@ body {
   color: white;
   max-width: 800px;
   height: 50px;
+  margin-left: 110px;
 }
 
 .footer > div {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.footer > p {
+  grid-column: 2/3;
+}
+
+.footer > .navbar {
+  grid-column: 3/4;
 }
 
 .footer a {
@@ -281,6 +290,9 @@ make the two columns stack on top of each other instead of next to each other */
   .tabbed_content_bar {
     margin-left: 15%;
   }
+  .footer {
+    margin-left: 0px;
+  }
 }
 
  /* ##Device = Tablets, Ipads (portrait)
@@ -316,6 +328,16 @@ make the two columns stack on top of each other instead of next to each other */
     margin-top: 200px;
 
   }
+  .footer {
+    grid-template-columns: 50% 50%;
+  }
+  .footer > p {
+    grid-column: 1/2;
+  }
+  
+  .footer > .navbar {
+    grid-column: 2/3;
+  }
 }
 
 /* two wide columns */
@@ -350,7 +372,14 @@ make the two columns stack on top of each other instead of next to each other */
     margin-left: 25px;
     width: 320px;
   }
+  .footer {
+    grid-template-columns: 50% 50%;
+  }
   .footer > p {
-    grid-column: 0/1;
+    grid-column: 1/2;
+  }
+  
+  .footer > .navbar {
+    grid-column: 2/3;
   }
 }
