@@ -287,7 +287,7 @@ make the two columns stack on top of each other instead of next to each other */
  ##Screen = B/w 768px to 1024px */
 @media (max-width: 960px) {
   body {
-    background-size: 1300px;
+    background-size: 1500px;
     background-position-y: 535px;
     background-position-x: -200px;
   }
@@ -321,8 +321,8 @@ make the two columns stack on top of each other instead of next to each other */
 /* two wide columns */
 @media screen and (max-width: 760px) {
   body {
-    background-position-y: 710px;
-    background-position-x: -250px;
+    background-position-y: 750px;
+    background-position-x: -300px;
   }
   .side {
     max-width: 1000px;
@@ -342,6 +342,9 @@ make the two columns stack on top of each other instead of next to each other */
   .boxed {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  #quizes {
+    height: 740px;
   }
   .tabbed_content_bar {
     margin-left: 25px;
