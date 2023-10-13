@@ -1,0 +1,10 @@
+Please answer the following accessibility questions:
+
+
+1. What accessibility corrections did you have to make?
+
+
+2. Do you think your website is usable if you turn off the CSS? Why or why not?
+
+
+3. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
