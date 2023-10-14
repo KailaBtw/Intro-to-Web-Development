@@ -1,10 +1,26 @@
+Ellie Lagrave
 Please answer the following accessibility questions:
 
-
-1. What accessibility corrections did you have to make?
-
-
-2. Do you think your website is usable if you turn off the CSS? Why or why not?
-
-
-3. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
+    What corrections did you have to make?
+	
+		Add alt text to each image
+		
+		Add aria-label to the buttons
+		
+		Newest wave version also requires invisible text on the bottons because certain screen readers do not work well with aria-labels.
+		This was giving red errors until fixed.
+		To solve this I added a span element with text inside and then set the span class name to have 0 height and 0 font size.
+	
+	
+    Do you think your website is usable if you turn off the CSS? Why or why not?
+		
+		Yes, the website is usable without CSS turned on.
+		To test, I unlinked the stylesheets and was still able to click on play buttons and music controls.
+	
+    Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
+		
+		Yes, the website can be navigated with tab, all of the important options can be reached, including the play button for each album
+		and the overall music controls. 
+		
+		
+		
