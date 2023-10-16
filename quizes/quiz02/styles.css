@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header {
+    background-color: #013672;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 100%;
+}
+header > nav {
+    justify-content: right;
+    margin-left: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Passion One', sans-serif, Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+h2 {
+    margin-top: 80px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 440px 440px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 300px 100px;
+    border: rgb(166, 166, 166) solid 1px;
+    padding: 10px;
+    min-width: 400px;
+    max-height: fit-content;
+}
+.card p {
+    font-size: smaller;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.card h3 {
+    font-weight: 900;
+}
+
+.card > img {
+    width: 120px;
+}
+
+header > nav {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    column-gap: 15px;
+
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header img, footer img {
+    width: 200px;
+}
+
+.card:hover {
+    color: white;
+    background-color: #013672;
+    transition: all 400ms;
+
+
+}
+
+@media (max-width: 800px) {
+    .cards{
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        min-width: 440px;
+    }
+    header > nav {
+        visibility: hidden;
+        display: none;
+    }
+
+}
