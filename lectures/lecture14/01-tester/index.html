@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <h1>Tester</h1>
+    <form onsubmit="updateScreen(event)">
+        <span>document.querySelector(</span>
+        <input id="selector" type="text" placeholder="selector" />
+        <span>).</span>
+        <input id="thing-to-change" type="text" placeholder="attribute or style property" />
+        <span> = </span>
+        <input id="value" type="text" placeholder="new value" />
+        <button>Update</button>
+        <pre id="code"></pre>
+    </form>
+
+    <aside>
+        <h2>Your Tasks</h2>
+        <ul>
+            <li>Change the first section's background color to red.</li>
+            <li>Change the second section's text color to blue.</li>
+            <li>Change the third section's inner HTML to "Hello world!"</li>
+            <li>Change the fourth section's background color to pink.</li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="section1" class="my-section">Section 1</section>
+        <section id="section2" class="my-section">Section 2</section>
+        <section id="section3" class="my-section">Section 3</section>
+        <section id="section4" class="my-section">Section 4</section>
+    </main>
+
+</body>
+
+</html>

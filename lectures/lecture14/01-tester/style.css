@@ -1,0 +1,63 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form span {
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+form input {
+    min-width: 200px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+form button {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+form input#thing-to-change {
+    min-width: 250px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+header {
+    padding: 10px;
+}
+
+#image-demo {
+    width: 400px;
+    border: solid 1px #000;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border: solid 1px #000;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+pre#code {
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: monospace;
+    background: #F0F0F0;
+    height: 50px;
+    display: grid;
+    align-items: center;
+}
