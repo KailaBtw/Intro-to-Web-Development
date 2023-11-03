@@ -1,0 +1,11 @@
+label {
+  font-weight: bold;
+  width: 75px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+body {
+  height: 1000px;
+}
