@@ -8,19 +8,25 @@
     <body>
         <main>
             <aside>
-                <label for="color">Color:</label>
+                <label for="color">Shape Color:</label>
                 <input type="text" id="color" value="red" />
 
                 <label for="size">Size:</label>
                 <input type="text" id="size" value="40" />
+
+                <label for="outline">Outline Color:</label>
+                <input type="text" id="outline" value="black" />
 
                 <label for="shape">Shape:</label>
                 <select id="shape">
                     <option value="circle">Circle</option>
                     <option value="square">Square</option>
                     <option value="triangle">Triangle</option>
+                    <option value="bowtie">Bowtie</option>
                 </select>
 
+                <label>Reset the Canvas:</label>
+                <button onclick="reset()">Reset</button>
             </aside>
 
             <section id="canvas-holder"> 

@@ -14,11 +14,38 @@ function mouseDragged(){
     // the color, shape, and size of the paintbrush that are selected
     // in the right-hand panel. Replace the code below with something
     // smarter:
-    fill('hotpink');
-    circle(mouseX, mouseY, 20);
+    //clear();
+    const color = document.querySelector("#color").value;
+    const size = document.querySelector("#size").value;
+    const outline = document.querySelector("#outline").value;
+
+    if(document.querySelector("#shape").value === "circle") {
+        stroke(outline)
+        circle(mouseX, mouseY, size);
+    } else if(document.querySelector("#shape").value === "square") {
+        stroke(outline)
+        square(mouseX, mouseY, size);
+    } else if(document.querySelector("#shape").value === "triangle") {
+        stroke(outline)
+        triangle(
+            mouseX, mouseY-(size/2), // first point
+            mouseX+(size/2), mouseY+(size/2), // second point
+            mouseX-(size/2), mouseY+(size/2)  // third point
+        )
+    } else if(document.querySelector("#shape").value === "bowtie") {
+        stroke(outline)
+        quad(mouseX+(size/5),mouseY-(size/2),
+            mouseX+(size/5),mouseY+(size/2),
+            mouseX-(size/5),mouseY-(size/2),
+            mouseX-(size/5),mouseY+(size/2)
+            );
+    }
+    fill(color);
 }
 
-
+function reset() {
+    clear();
+}
 
 /*
 // Samples:
