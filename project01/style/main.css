@@ -1,0 +1,656 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+body {
+    font-family: "Montserrat";
+}
+
+/*
+header and navigation
+*/
+
+a:focus,
+a h2:focus,
+a h3:focus,
+div:focus {
+    outline: 1px solid var(--evening-blue);
+    /*gold !important;*/
+    outline-style: auto !important;
+}
+
+
+.sidebar-programs ul {
+    padding-left: 10px;
+}
+
+.sidebar-programs ul ul {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.sidebar-programs ul ul li {
+    font-size: 0.9em;
+}
+
+.h1 {
+    font-weight: 400;
+    color: var(--night-sky);
+}
+
+
+.admin-bar #masthead {
+    top: 32px;
+}
+
+#masthead {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+
+#unca-navigation {
+    background-color: #003865;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5vw;
+    height: 50px;
+}
+
+#unca-navigation a,
+#unca-navigation a:link,
+#unca-navigation a:visited,
+#unca-navigation a:hover,
+#unca-navigation a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#unca-navigation a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
+    opacity: .8;
+}
+.programs-submenu h2 {
+    margin: 40px 0 5px 0 !important;
+    text-decoration: none;
+}
+
+.programs-submenu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.programs-submenu aside:last-child {
+    margin-bottom: 50px;
+}
+
+.programs-submenu a:hover {
+    border-bottom: 1px solid var(--night-sky);
+    opacity: .8;
+}
+
+.programs-submenu .current-menu-item a {
+    border-bottom: solid 1px var(--night-sky);
+    /* font-weight: bold; */
+}
+
+
+.header-logo-wrapper {
+    min-width: 350px;
+    max-width: 350px;
+    font-size: 26px;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+/************* Two Column Layout **************/
+/* .entry-wrapper.two-column {
+    display: grid;
+    grid-template-columns: auto 350px;
+    padding: 0 5vw;
+    column-gap: 30px;
+} 
+.entry-wrapper.two-column .entry-content {
+    width: 100%;
+}
+*/
+
+
+.entry-wrapper.two-column {
+    display: flex;
+    padding: 0 5vw;
+    column-gap: 30px;
+}
+
+.entry-wrapper.two-column .entry-content {
+    width: 60vw
+}
+
+.entry-wrapper.two-column>aside {
+    width: 30vw
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .entry-wrapper.two-column {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .entry-content {
+        padding: 0 3vw;
+    }
+
+    .entry-wrapper.two-column .entry-content {
+        width: 100%;
+    }
+
+    .entry-wrapper.two-column>aside {
+        width: 100%;
+    }
+}
+
+/************** Footer ************************/
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.footer-links a,
+.footer-links a:link,
+.footer-links a:visited,
+.footer-links a:active,
+.footer-links a:hover {
+    color: white !important;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
+    opacity: .8;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    #footer-animation {
+        display: none;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+.entry-content p,
+.entry-content li {
+    line-height: 1.7em;
+}
+
+
+.button,
+.button:active,
+.button:visited,
+.button:hover,
+.button:link {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 2px solid rgba(68, 68, 68, .19);
+    background-image: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .2s ease;
+}
+
+.button.apply {
+    background-color: var(--bulldog-blue);
+    border-radius: 2px;
+    padding: 7px 15px;
+}
+
+.button.apply:hover {
+    background-color: var(--sky-blue);
+}
+
+.button.dark {
+    background-color: var(--night-sky);
+}
+
+.button.dark:hover {
+    opacity: 0.8;
+}
+
+.link {
+    padding: 0;
+    background: transparent;
+    border: none;
+    letter-spacing: 0px;
+    /* font-size: 1em; */
+}
+
+/* .no-blink {
+    width: 100vw !important;
+} */
+
+/* Top margin for page accounting for the fixed navbar */
+.admin-bar #masthead+* {
+    margin-top: 170px;
+}
+
+#masthead+* {
+    /* margin-top: 108px; */
+    margin-top: 170px;
+}
+
+
+.page .entry-content,
+.page .entry-header .inner-wrap,
+.page:not(.inspiro-front-page) .entry-footer,
+.single .entry-content,
+.single .entry-footer,
+.single .entry-header .inner-wrap {
+    margin: 0 auto;
+}
+
+#unca {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    z-index: 100;
+    /* position: fixed; */
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bulldog-blue);
+    background-color: white;
+    height: var(--banner-one-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unca-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.has-header-image .navbar,
+.has-header-video .navbar {
+    background-color: var(--night-sky);
+    background-image: none;
+}
+
+.header-inner.inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/***********************/
+/* Elementor Overrides */
+/***********************/
+.entry-content h2 {
+    font-weight: 400;
+}
+
+.entry-content p {
+    margin-top: 0;
+}
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+    margin-bottom: 5px;
+}
+
+
+.entry-content li {
+    list-style-position: outside;
+}
+
+
+/**********/
+/* Footer */
+/**********/
+
+.nav-link {
+    margin-left: 30px;
+}
+
+.copyright {
+    color: white;
+}
+
+
+/******Single Blog Post ******/
+
+.entry-title {
+    margin-top: 50px;
+    color: var(--night-sky);
+    font-weight: 300;
+}
+
+/*****************/
+/* Programs Page */
+/*****************/
+.entry-content {
+    min-height: 70vh;
+    /* padding: 0 3vw; */
+}
+
+@media screen and (min-width: 48em) {
+    .page-layout-sidebar-right.has-sidebar.programs .entry-wrapper .entry-content {
+        width: 66%;
+    }
+
+    .page-layout-sidebar-right.has-sidebar.programs #secondary {
+        width: 33%;
+        padding: 0 5vw 0 0;
+    }
+
+    .page-layout-sidebar-right.has-sidebar.programs .header-inner.inner-wrap {
+        max-width: 1200px;
+    }
+
+    .page-layout-sidebar-right.has-sidebar.programs #content .inner-wrap {
+        max-width: 100%;
+    }
+
+    .page-layout-sidebar-right.has-sidebar:not(.archive) #primary,
+    .page-layout-sidebar-right.has-sidebar:not(.error404) #primary,
+    .page-layout-sidebar-right.has-sidebar.programs #primary {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .page-layout-sidebar-right.has-sidebar.programs #secondary {
+        padding: 0 2vw 0 0;
+    }
+}
+
+.programs-submenu,
+.project-submenu {
+    background: #F0F0F0;
+    padding: 30px;
+    /* position: sticky;
+    top: 150px; */
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .programs-submenu,
+    .project-submenu {
+        margin-bottom: 0px;
+    }
+}
+
+.category-news .programs-submenu:first-child {
+    padding-top: 60px;
+}
+
+.programs-submenu h2,
+.programs-submenu h3 {
+    color: var(--e-global-color-primary);
+    font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.project-submenu h3 {
+    color: var(--e-global-color-primary);
+    font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.project-submenu ul {
+    margin-top: 0;
+}
+
+.programs-submenu h3 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.programs-submenu.featured-image figure {
+    margin: 30px 0 0 0;
+}
+
+.programs-submenu img {
+    width: 100%;
+}
+
+.programs-submenu.featured-image figcaption {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/******
+ FAQs */
+.elementor-938 .elementor-element.elementor-element-93e8de3 .elementor-toggle-icon.elementor-toggle-icon-left {
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+    .people-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/** Hacks that I don't quite understand **/
+
+/* If you don't add this, the anchor links on "About the Major" don't work */
+.elementor-widget-wrap>.elementor-widget-menu-anchor {
+    width: auto !important;
+}
+
+
+
+
+/********************/
+/* For News Sidebar */
+/********************/
+.wpr-grid-image-wrap img {
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* For Post Detail Page (hide images) */
+.news .wpr-grid-image-wrap {
+    display: none;
+}
+
+.news .wpr-grid-item-below-content {
+    padding: 0px 0px 10px 0px !important;
+}
+
+.h2-sidebar {
+    font-weight: 700 !important;
+    color: var(--evening-blue) !important;
+}
+
+/*****************/
+/* For News Post */
+/*****************/
+.header {
+    height: 300px;
+    overflow: hidden;
+}
+
+.header-image {
+    display: block;
+    border-style: none;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.news-header {
+    color: var(--night-sky);
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 5vh;
+    color: #fff;
+    text-shadow: 2px 2px 7px black;
+}
+
+.breadcrumbs h1 a,
+.breadcrumbs h1 a:link,
+.breadcrumbs h1 a:active,
+.breadcrumbs h1 a:visited {
+    text-decoration: none !important;
+}
+
+.breadcrumbs h1 a:hover {
+    text-decoration: underline !important;
+}
+
+.breadcrumbs h1 i {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+
+.cards,
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-bottom: 70px;
+}
+
+.projects {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card,
+.project {
+    background: #F4F4F4;
+    border: solid 1px #EEE;
+    padding: 40px 20px;
+    /* border-radius: 6px; */
+    text-align: center;
+}
+
+.project {
+    background: var(--night-sky);
+    background-size: cover;
+    height: 300px;
+    padding: 0;
+    transition: all 0.2s ease-in;
+}
+
+.project:hover {
+    /* margin: 0px; */
+    transform: scale(1.05);
+}
+
+.project:hover .overlay-box {
+    background-color: #00000000;
+}
+
+.overlay-box {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #00000077;
+    transition: all 0.2s ease-in;
+}
+
+.tag {
+    border-radius: 6px;
+    margin: 0px 10px 10px 0px;
+    padding: 5px 10px;
+    background-color: #F0F0F0;
+    display: inline-block;
+}
+
+.tag:hover {
+    background-color: #DDD;
+}
+
+.loading {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading p {
+    font-size: 1.2rem !important;
+}
+
+
+
+.sub-menu, a {
+    text-decoration: none;
+}
+
+.menu-item-has-children > a::after {
+    color: white;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f078';
+    margin-left: 6px;
+    font-size: 12px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
