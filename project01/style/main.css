@@ -635,7 +635,15 @@ body {
     padding-top: 35px;
 
 }
-
+@media screen and (max-width: 70em) {
+    body{
+        grid-template-columns: 100%;
+        padding-right: 10%;
+    }
+    .clear{
+        padding-right: 20px;
+    }s
+}
 @media screen and (max-width: 55em) {
     body{
         grid-template-columns: 100%;
