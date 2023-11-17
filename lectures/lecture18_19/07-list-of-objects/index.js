@@ -14,14 +14,16 @@ const people = [
 //           in the list above. You will replace the image url, name, and 
 //           points with a template variable.
 
-let template = `
-    <div class="card">
-        <div>
-            <img src="http://knight.gamebanana.com/img/ico/sprays/patrick_star_preview_2.png">
-            <p>Maria scored 80 points</p>
-        </div>
-    </div>
-`;
-document.querySelector(".players").innerHTML = template;
 
+for(let i = 0; i<people.length; i++) {
+    let template = `
+        <div class="card">
+            <div>
+                <img src="${people[i].pic}">
+                <p>${people[i].name} scored ${people[i].score} points</p>
+            </div>
+        </div>
+    `;
+    document.querySelector(".players").insertAdjacentHTML('beforeend', template);
+}
 
