@@ -69,6 +69,25 @@
     display: flex;
 }
 
+a:hover {
+    text-decoration: none; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Submenu hover effects only for desktop screens */
 @media screen and (min-width: 55em) {
     .menu-item-has-children > a::after {

@@ -352,7 +352,6 @@ footer p {
     color: var(--night-sky);
     font-weight: 300;
 }
-
 /*****************/
 /* Programs Page */
 /*****************/
@@ -622,25 +621,31 @@ footer p {
 
 
 
+/*
+*Adding content
+*/
 .sub-menu, a {
     text-decoration: none;
 }
 
-.menu-item-has-children > a::after {
-    color: white;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: '\f078';
-    margin-left: 6px;
-    font-size: 12px;
-  }
+body {
+    margin-top: 170px;
+
+    
+    display: grid;
+    grid-template-columns: auto 30.4%;
+    column-gap: 30px;
+    padding-right: 5vw;
+}
 
 
-
-
-
-
-
+.acm-header {
+    display: flex;
+    flex-direction: row;
+}
+.acm-header > img {
+    padding-top: 35px;
+}
 
 
 
