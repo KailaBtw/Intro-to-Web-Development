@@ -635,6 +635,11 @@ body {
     padding-top: 35px;
 
 }
+#discord-shell {
+    padding-left: 5%;
+    padding-right: 40px;
+}
+
 @media screen and (max-width: 70em) {
     body{
         grid-template-columns: 100%;
@@ -642,7 +647,11 @@ body {
     }
     .clear{
         padding-right: 20px;
-    }s
+    }
+    #discord-shell {
+        padding-left: 0%;
+        padding-right: 0px;
+    }
 }
 @media screen and (max-width: 55em) {
     body{
