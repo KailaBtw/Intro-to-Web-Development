@@ -456,24 +456,13 @@ footer p {
 
 /******
  FAQs */
-.elementor-938 .elementor-element.elementor-element-93e8de3 .elementor-toggle-icon.elementor-toggle-icon-left {
-    line-height: 1.5em;
-}
+
 
 @media screen and (max-width: 1000px) {
     .people-list {
         grid-template-columns: 1fr;
     }
 }
-
-
-/** Hacks that I don't quite understand **/
-
-/* If you don't add this, the anchor links on "About the Major" don't work */
-.elementor-widget-wrap>.elementor-widget-menu-anchor {
-    width: auto !important;
-}
-
 
 
 
@@ -630,8 +619,6 @@ footer p {
 
 body {
     margin-top: 170px;
-
-    
     display: grid;
     grid-template-columns: auto 30.4%;
     column-gap: 30px;
@@ -643,11 +630,32 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .acm-header > img {
     padding-top: 35px;
+
 }
 
-
+@media screen and (max-width: 55em) {
+    body{
+        grid-template-columns: 100%;
+        padding-right: 0;
+    }
+    .clear{
+        padding-right: 20px;
+    }
+    .main-navigation {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        top: 80px;
+        right: 0;
+    }
+}
 
 
 
