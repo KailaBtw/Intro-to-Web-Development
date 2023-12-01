@@ -1,0 +1,21 @@
+Ellie Lagrave
+CSCI 185
+https://kailabtw.github.io/csci185-coursework/
+https://github.com/KailaBtw/
+
+
+•	What corrections did you have to make, and how did you make them?
+
+	The search form (search for artist) needed an aria label so I added aria-label=”search artist” to the form html attributes.
+	Language was not defined for the web page <html lang="en"> was added to head to solve that problem.
+	Images needed alt text so alt attribute was added to getArtist and used the artist name, or albums name as alt. 
+	That is all of the errors, there were 10 alerts that are false positives.
+ 
+ 
+•	Is this interface functional without the use of a mouse (i.e., just using keyboard keys)? Why or why not?
+
+	Yes, I was able to use the website without using a mouse, the only thing I was not able to access with tab was the song list panel on the right, but I think screen readers would work.
+
+•	What are other accessibility tests or features you added or would be interested in learning about?
+
+	What hotkeys can be used to navigate web pages?
